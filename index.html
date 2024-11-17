@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Permanente</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="imagenes/logo.jpg" alt="Logo de la página">
+            <nav>
+                <ul>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#enviar">Enviar tus datos</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="bienvenida">
+        <video autoplay muted loop id="myVideo" controls>
+            <source src="imagenes/video.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+        <div class="overlay">
+            <h1>Nuestro Sitio Web</h1>
+            <p>Bienvenidos a nuestra página web. Descubre más sobre nuestros servicios.</p>
+            <a href="#enviar" class="btn-ingresar">Ingresar a Mi Página</a>
+        </div>
+    </section>
+    
+    <section id="enviar">
+        <h2>Envia tus datos</h2>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section id="ubicacion">
+        <h2>Nuestra Ubicación</h2>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31197.210525323906!2d-76.94462908754724!3d-12.204112336087652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b91caa174979%3A0x1c63f3633adeeaff!2sSue%C3%B1a%20y%20Viaja!5e0!3m2!1ses-419!2spe!4v1731813291197!5m2!1ses-419!2spe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Nuestra Galería de Imágenes</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="/imagenes/Lima-Peru.png" alt="Imagen 1">
+                <p>Descripción del poste 1</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/imagenes/Machupichu.png" alt="Imagen 2">
+                <p>Descripción del poste 2</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/imagenes/Cusco.png" alt="Imagen 3">
+                <p>Descripción del poste 3</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/imagenes/huascaran.png" alt="Imagen 4">
+                <p>Descripción del poste 4</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h3>Contacto</h3>
+                <p>Dirección: Calle Ficticia 123</p>
+                <p>Teléfono: +123 456 789</p>
+                <p>Email: contacto@ejemplo.com</p>
+            </div>
+            <div class="footer-item">
+                <h3>Redes Sociales</h3>
+                <p><i class="fab fa-facebook"></i> Facebook</p>
+                <p><i class="fab fa-twitter"></i> Twitter</p>
+                <p><i class="fab fa-instagram"></i> Instagram</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
